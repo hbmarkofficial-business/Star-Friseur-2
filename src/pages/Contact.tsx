@@ -10,38 +10,38 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Kontakt & Termin | El Barbas Barber Bielefeld</title>
+        <title>Kontakt & Termin | The Gentleman's Cut Berlin</title>
         <meta 
           name="description" 
-          content="Kontaktieren Sie El Barbas Barber in Bielefeld. Vereinbaren Sie Ihren Termin über unseren Chatbot oder rufen Sie uns an. Mo-Fr 09-20 Uhr, Sa 10-18 Uhr." 
+          content="Kontaktieren Sie The Gentleman's Cut in Berlin. Vereinbaren Sie Ihren Termin über unseren Chatbot oder rufen Sie uns an. Mo-Fr 09-20 Uhr, Sa 10-18 Uhr." 
         />
-        <link rel="canonical" href="https://elbarbasbarber.de/kontakt" />
+        <link rel="canonical" href="https://gentlemanscut.de/kontakt" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Barbershop",
-            "@id": "https://elbarbasbarber.de/#barbershop",
-            "name": "El Barbas Barber",
-            "url": "https://elbarbasbarber.de",
-            "logo": "https://elbarbasbarber.de/images/logo.png",
-            "image": "https://elbarbasbarber.de/images/shop.jpg",
-            "telephone": "+49 521 1234567",
+            "@id": "https://example-barbershop.at/#barbershop",
+            "name": "Beispiel Barbershop Wien",
+            "url": "https://example-barbershop.at",
+            "logo": "https://example-barbershop.at/images/logo.png",
+            "image": "https://example-barbershop.at/images/shop.jpg",
+            "telephone": "+43 1 2345678",
             "priceRange": "€€",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Herforder Str. 10",
-              "addressLocality": "Bielefeld",
-              "postalCode": "33602",
-              "addressCountry": "DE"
+              "streetAddress": "Musterstraße 12",
+              "addressLocality": "Wien",
+              "postalCode": "1020",
+              "addressCountry": "AT"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "52.0226",
-              "longitude": "8.5331"
+              "latitude": "48.2167",
+              "longitude": "16.3958"
             },
             "areaServed": {
               "@type": "AdministrativeArea",
-              "name": "Bielefeld"
+              "name": "Wien"
             },
             "openingHoursSpecification": [
               {
@@ -58,9 +58,9 @@ const Contact = () => {
               }
             ],
             "sameAs": [
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19646.441989745683!2d8.479678874316397!3d52.010426599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ba3d11988ddce3%3A0x1ade68806af479fc!2sStar%20Friseur%202!5e0!3m2!1sde!2sde!4v1771510622041!5m2!1sde!2sde",
-              "https://www.instagram.com/elbarbasbarber",
-              "https://www.facebook.com/elbarbasbarber"
+              "https://www.google.com/maps?cid=1234567890",
+              "https://www.instagram.com/beispielbarbershop",
+              "https://www.facebook.com/beispielbarbershop"
             ]
           })}
         </script>
@@ -96,7 +96,6 @@ const Contact = () => {
         <section className="py-24 bg-charcoal">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-              {/* Chatbot Column */}
               <AnimateOnScroll animation="slide-left" className="order-1 lg:order-1">
                 <div className="bg-card border border-border rounded-sm p-8 md:p-10 h-fit">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
@@ -144,7 +143,6 @@ const Contact = () => {
                     </a>
                   </div>
 
-                  {/* Alternative Buchung Block */}
                   <div className="mt-8 pt-8 border-t border-border">
                     <p className="text-muted-foreground text-center mb-6 leading-relaxed">
                       Alternativ können Sie direkt hier die Verfügbarkeit Ihres Wunschtermins prüfen oder einen Termin buchen:
@@ -177,7 +175,6 @@ const Contact = () => {
                 </div>
               </AnimateOnScroll>
 
-              {/* Info Column */}
               <AnimateOnScroll animation="slide-right" className="order-2 lg:order-2">
                 <div className="space-y-8">
                   <h2 className="font-display text-3xl font-bold text-foreground mb-8">
@@ -220,10 +217,10 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">E-Mail</h3>
                         <a 
-                          href="mailto:info@elbarbasbarber.de" 
+                          href="mailto:info@gentlemanscut.de" 
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          info@elbarbasbarber.de
+                          info@mustershop.de
                         </a>
                       </div>
                     </div>
@@ -253,7 +250,7 @@ const Contact = () => {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Standort El Barbas Barber"
+                      title="Standort The Gentleman's Cut"
                     />
                   </div>
                 </div>
